@@ -1,0 +1,951 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+html {
+  font-size: 10px;
+  background-color: #24292e;
+}
+
+.image2 {
+  display: none;
+}
+
+.logo img,
+.logo2 img {
+  width: 100%;
+}
+
+.logo {
+  width: 25%;
+  height: 25%;
+  margin: 10px auto 0; 
+}
+
+.top {
+  position: relative;
+  top: -4vh;
+  z-index: -1;
+  height: 60vh;
+  background-image: url(../img/head_300.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top h1 {
+  position: absolute;
+  top: 30%;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: whitesmoke;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 10px 0 10px;
+}
+
+.top h2 {
+  position: absolute;
+  width: 100%;
+  bottom: 10%;
+  font-size: 2rem;
+  color: whitesmoke;
+  font-weight: normal;
+  text-align: center;
+  padding: 0 10px 0 10px;
+}
+
+.top .dark {
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+}
+
+.logo2 {
+  width: 25%;
+  height: 25%;
+  margin: -15% auto 0;
+}
+
+.main{
+  width: 90%;
+  margin: 15% auto 0;
+}
+
+.headMain {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 5%;
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+
+.teammates {
+  margin-bottom: 20%;
+}
+
+.teammate {
+  margin-bottom: 10%;
+}
+.imgTeam {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.imgTeam img {
+  width: 100%;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.name {
+  font-size: 2.1rem;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.offer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.imgOffer {
+  overflow: hidden;  
+}
+
+.imgOffer img {
+  width: 100%;
+  margin-top: -20%;
+}
+
+.offer .description {
+  margin: 0 auto;
+  background-color: #a0a0a0;
+  color: whitesmoke;
+  margin-bottom: 10%;
+}
+
+.description h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.description ul {
+  list-style: square;
+  width: 80%;
+  padding: 10px;
+  margin: 0 auto 5%;
+}
+
+.description ul li {
+  font-size: 1.6rem;
+}
+
+.description button {
+  width: 100%;
+  padding: 3% 0;
+  text-transform: uppercase;
+  border: 2px solid black;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  background-color: #000;
+}
+
+.about p {
+  font-size: 1.8rem;
+  color: whitesmoke;
+  padding: 0 5%;
+  text-align: justify;
+  margin-bottom: 15%;
+}
+
+.about .logo2 {
+  margin: 10px auto;
+}
+
+.priceList {
+  position: relative;
+}
+
+.headPrice {
+  background-color: #333;
+  padding: 3% 0;
+  margin-bottom: 0;
+}
+
+.prices {
+  padding: 10% 5% 3%;
+  font-size: 1.8rem;
+  background-color: #a0a0a0;
+}
+
+.prices p {
+  margin-bottom: 5%;
+}
+.price{
+  width: 20%;
+  float: right;
+  border-bottom: 1px solid #000;
+}
+.type {
+  width: 80%;
+  float: left;
+  border-bottom: 1px solid #000;
+}
+
+.priceList .logo {
+  position: absolute;
+  top:0;
+  left: 0;
+  margin: 10px 0;
+}
+
+.butt {
+  display: block;
+  padding: 2% 10%;
+  margin: 10% auto;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  border: 3px solid white;
+  background-color: #000;
+  color: whitesmoke;
+}
+
+.gallery{
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.imgGallery {
+  float: left;
+  width: 50%;
+  padding: 2%;
+}
+
+.imgGallery img {
+  width: 100%;
+}
+
+.hours, .contact {
+  float: left;
+  width: 50%;
+}
+
+.headCont {
+  font-size: 1.5rem;
+  padding: 3%;
+  text-align: center;
+  background-color: #333;
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+
+.hours,.contact {
+  min-height: 28vh;
+  background-color: #a0a0a0;
+  
+}
+.hours {
+  border-right: 1px solid black;
+}
+
+.hours ul {
+  padding: 10%;
+  list-style: none;
+}
+
+.hours ul li {
+  font-size: 1.1rem;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  padding: 10% 0 0 10%;
+}
+
+.contact i {
+  margin-right: 10px;
+}
+
+.footer{
+  margin-top: 2%;
+  font-size: 1rem;
+  background-color: #000;
+  color: whitesmoke;
+  text-align: center;
+}
+
+@media (min-width:360px) and (orientation:portrait) {
+  .top {
+    height: 65vh;  
+  }
+}
+
+@media (min-width:411px) and (orientation:portrait) {
+  .top h1 {
+    top: 35%;
+    font-size: 3rem;
+  }
+  
+  .top h2 {
+    bottom: 13%;
+    font-size: 2.2rem;
+  }
+
+  .imgGallery {
+    padding: 1%;
+  }
+
+  .hours,.contact {
+    min-height: 24vh;
+  }
+
+  .hours ul li, .contact p {
+    font-size: 1.3rem;
+  }
+
+  .footer{
+    font-size: 1.2rem;
+  }
+}
+
+  @media (min-width:540px) and (orientation:portrait) {
+    .top h1 {
+      top: 30%;
+      font-size: 3.2rem;
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    .top h2 {
+      bottom: 15%;
+      font-size: 2.4rem;
+    }
+
+    .offer {
+      width: 65%;
+      margin: 0 auto;
+    }
+    .hours,.contact {
+      min-height: 27vh;
+    }
+  }
+
+  @media (min-width:768px) and (orientation:portrait) {
+    .logo {
+      width: 20%;
+      height: 20%;
+      margin: 5px auto 0; 
+    }
+
+    .logo2 {
+      width: 20%;
+      height: 20%;
+      margin: -15% auto 0;
+    }
+
+    .top {
+      z-index: -1;
+      height: 65vh;
+    }
+
+    .top h1 {
+      top: 35%;
+      font-size: 3.7rem;
+    }
+    
+    .top h2 {
+      bottom: 15%;
+      font-size: 3rem;
+    }
+
+    .headMain {
+      font-size: 3rem;
+    }
+
+    .teammates {
+      margin-bottom: 13%;
+    }
+
+    .teammate {
+      width: 50%;
+      float: left;
+      margin: 0 auto;
+    }
+
+    .teammate:nth-child(4){
+      margin-top: 10%;
+      margin-left: 25%;
+    }
+
+    .imgTeam {
+      width: 100%;
+      padding: 2%;
+    }
+
+    .name {
+      font-size: 2.4rem;
+    }
+
+    .offer {
+      width: 60%;
+      float: left;
+      margin: 0 auto;
+    }
+
+    .offer:nth-of-type(even) {
+      float: right;
+    }
+    
+    .imgOffer img {
+      margin-top: -23%;
+    }
+    
+    .description h2 {
+      font-size: 2.6rem;
+    }
+    
+    .description ul {
+      padding: 14px;
+    }
+    
+    .description ul li {
+      font-size: 2rem;
+    }
+    
+    .description button {
+      padding: 5% 0;
+      font-size: 2rem;
+    }
+
+    .about p {
+      font-size: 2.2rem;
+      padding: 0 2%;
+      margin-bottom: 10%;
+    }
+    
+    .prices {
+      font-size: 2rem;
+    }
+    
+    .prices p {
+      margin-bottom: 5%;
+    }
+    .price{
+      width: 10%;
+    }
+    .type {
+      width: 90%;
+    }
+    
+    .butt {
+      padding: 3% 12%;
+      font-size: 2rem;
+    }
+
+    .gallery{
+      width: 95%;
+    }
+    
+    .imgGallery {
+      padding: 1%;
+    }
+    
+    .headCont {
+      font-size: 2rem;
+      padding: 3%;
+    }
+
+    .hours {
+      border-right: 2px solid black;
+    }
+    
+    .hours ul li {
+      font-size: 1.6rem;
+    }
+    
+    .contact p {
+      font-size: 1.6rem;
+      padding: 5% 0 0 10%;
+    }
+
+    .contact p:nth-of-type(1) {
+      padding-top: 10%;
+    }
+    
+    .contact i {
+      margin-right: 15px;
+    }
+    
+    .footer{
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width:1024px) and (orientation:portrait) {
+    .image1 {
+      display: none;
+    }
+
+    .image2 {
+      display: block;
+    }
+
+    .imgOffer img {
+      margin-top: -10%;
+    }
+
+    .top {
+      height: 67vh;
+      background-image: url(../img/head_1280x1000.jpg);
+    }
+
+    .top h1 {
+      top: 40%;
+      font-size: 5rem;
+    }
+    
+    .top h2 {
+      bottom: 15%;
+      font-size: 4rem;
+    }
+
+    .main {
+      width: 100%;
+    }
+    
+    .headMain {
+      font-size: 4.5rem;
+    }
+
+    .imgTeam {
+      padding: 3%;
+    }
+
+    .name {
+      font-size: 3rem;
+    }
+
+    .offer {
+      width: 33.33%;
+      float: left;
+      padding: 10px;
+    }
+
+    .offer:nth-of-type(even) {
+      float: left;
+      margin-top: 6%;
+    }
+    
+    .about p {
+      font-size: 3rem;
+      padding: 0 5%;
+    }
+    
+    .prices {
+      font-size: 3rem;
+    }
+    
+    .butt {
+      font-size: 3rem;
+    }
+
+    .gallery{
+      width: 100%;
+    }
+    
+    .headCont {
+      font-size: 3rem;
+    }
+    
+    .hours ul li {
+      font-size: 2.2rem;
+    }
+    
+    .contact p {
+      font-size: 2.2rem;
+    }
+    
+    .footer{
+      font-size: 2rem;
+    }
+  }
+
+  @media (min-width:533px) and (orientation:landscape) {
+    .logo {
+      position: absolute;
+      top: 5%;
+      left: 5%;
+      width: 15%;
+      height: 15%;
+    }
+    .logo2.topL {
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      width: 15%;
+      height: 15%;
+      margin:0;
+    }
+    
+    .top {
+      top: 0;
+      left: 0;
+      height: 100vh;
+    }
+    
+    .top h1 {
+      top: 50%;
+      width: 100%;
+    }           
+    .main{
+      margin: 10% auto 0;
+    }
+    
+    .headMain {
+      font-size: 2rem;
+    }
+    
+    .teammates {
+      margin-bottom: 5%;
+    }
+    
+    .teammate {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      margin-bottom: 3%;
+    }
+
+    .teammate:nth-of-type(3) {
+      margin-left: 25%;
+    }
+    .imgTeam {
+      width: 100%;
+    }
+    
+    .name {
+      font-size: 1.7rem;
+    }
+    
+    .offer {
+      width: 50%;
+    }
+    
+    .hours,.contact {
+      min-height: 50vh;
+    }
+    
+    .hours ul {
+      padding: 7%;
+    }
+    .contact p {
+
+      padding: 5% 0 0 10%;
+    }
+
+    .contact p:nth-of-type(1){
+      padding-top: 10%;
+    }
+  }
+
+  @media (min-width:640px) and (orientation:landscape) {
+    .main {
+      width: 100%;
+    }
+
+    .offer {
+      float: left;
+      width: 33.33%;
+      padding: 10px;
+    }
+    
+    .offer:nth-of-type(2) {
+      margin-top: 10%;
+    }
+    .imgOffer img {
+      margin-top: -15%;
+    }
+    .gallery{
+      width: 100%;
+    }
+
+    .hours,.contact {
+      min-height: 55vh;
+    }
+
+    .hours ul li {
+      font-size: 1.3rem;
+    }
+    
+    .contact p {
+      font-size: 1.3rem;
+    }
+    
+    .contact i {
+      margin-right: 15px;
+    }
+
+    .footer {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (min-width:731px) and (orientation:landscape) {
+    html {
+      font-size: 12px;
+    }
+  }
+
+  @media (min-width:812px) and (orientation:landscape) {
+    html {
+      font-size: 13px;
+    }
+    .hours,.contact {
+      min-height: 70vh;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .main {
+      width: 100%;
+      max-width: 1600px;
+    }
+    .image1{
+      display: none;
+    }
+
+    .image2{
+      display: block;
+    }
+    
+    .logo {
+      width: 10%;
+      height: 10%;
+    }
+
+    .logo2.topL {
+      width: 10%;
+      height: 10%;
+    }
+    .top {
+      height: 80vh;
+      background-image: url(../img/head_1280x1000.jpg);
+      background-attachment: fixed;
+     
+    }
+    
+    .top h1 {
+      top: 40%;
+      font-size: 5rem;
+    }
+    
+    .headMain {
+      font-size: 2.5rem;
+    }
+    
+    .teammates {
+      margin-bottom: 10%;
+    }
+    
+    .teammate {
+      float: left;
+      width: 33.33%;
+      margin: 0;
+    }
+
+    .teammate:nth-of-type(3) {
+      margin-left: 0;
+    }
+
+    .teammate:nth-of-type(2) {
+      margin-top: 20%;
+    }
+
+    .imgTeam {
+      width: 100%;
+    }
+    
+    .name {
+      font-size: 2rem;
+    }
+    
+    .offer {
+      width: 33.33%;
+
+    }
+ 
+    .imgOffer img {
+      margin-top: -10%;
+    }
+    
+    .description button{
+      transition: .2s;
+    }
+
+    .description button:hover {
+      background-color: #fff;
+      color: black;
+      border-color: white;
+      cursor: pointer;
+    }
+    
+    .about .logo2 {
+      width: 15%;
+      height: 15%;
+    }
+
+    .priceList {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .priceList .logo {
+      top: 8%;
+      left: 5%;
+    }
+    
+    .butt {
+      transition: .2s;
+    }
+
+    .butt:hover {
+      border: 3px solid black;
+      background-color: whitesmoke;
+      color: black;
+      cursor: pointer;
+    }
+    
+    .gallery{
+      width: 100%;
+    }
+    
+    .imgGallery {
+      width: 50%;
+      padding: 1%;
+      overflow: hidden;
+    }
+
+    .imgGallery img {
+      width: 100%;
+      transition: .3s;
+    }
+
+    .imgGallery:hover img{
+      transform: scale(1.1);
+      opacity: .5;
+      cursor: pointer;
+    }
+    
+    .info {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .hours {
+      float: left;
+      width: 40%;
+      min-height: auto;
+      transform: translateX(-50%);
+      transition: .2s;
+    }
+
+    .contact {
+      float: right;
+      width: 40%;
+      min-height: auto;
+      transform: translateX(50%);
+      transition: .2s;
+    }
+
+    .hours:hover, .contact:hover {
+      transform: translateX(0);
+    }
+    
+    .hours {
+      border-right: none;
+    }
+    
+    .hours ul {
+      padding: 10%;
+      list-style: none;
+    }
+    
+    .hours ul li {
+      font-size: 1.3rem;
+      text-align: center;
+    }
+    
+    .contact p {
+      font-size: 1.3rem;
+      padding: 5% 0 0 20%;
+    }
+
+    .contact p:nth-of-type(3){
+      padding-bottom: 5%;
+    }
+    
+    .contact i {
+      margin-right: 5%;
+    }
+    
+    .footer{
+      margin-top: 2%;
+      font-size: 1.5rem;
+      padding: 2% 0;
+    }
+  }
+
+  @media (min-width:1280px) {
+    html {
+      font-size: 11px;
+    }
+    .main {
+      width: 80%;
+    }
+
+    .gallery{
+      width: 100%;
+    }
+    
+    .imgGallery {
+      width: 25%;
+      padding: 1%;
+      overflow: hidden;
+    }
+
+    .imgGallery img {
+      width: 100%;
+      margin-bottom: 5%;
+      transition: .3s;
+    }
+
+    .imgGallery:hover img{
+      transform: scale(1.1);
+      opacity: .5;
+      cursor: pointer;
+    }
+  }
+
+  @media (min-width: 1600px) {
+    html {
+      font-size: 13px;
+    }
+    .main {
+      width: 60%;
+    }
+    .top {
+      height: 100vh;  
+    }
+    .priceList {
+      width: 60%;
+    }
+  }
