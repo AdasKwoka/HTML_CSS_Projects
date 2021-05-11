@@ -96,7 +96,12 @@ html {
   font-size: 3.2rem;
 }
 
-.socials i:nth-child(2) {
+.socials .social {
+  text-decoration: none;
+  color: #fff;
+}
+
+.socials .social:nth-child(2) {
   color: #0e76a8;
 }
 
