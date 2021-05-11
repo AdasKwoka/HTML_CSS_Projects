@@ -18,6 +18,7 @@ html {
   background-image: url('../images/bgi_400x640.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   overflow: hidden;
 }
 
@@ -212,4 +213,49 @@ main {
 
 .programming-lang-next .programming-lang:nth-child(3) .lang-logo {
   margin-bottom: -20%;
+}
+
+.project-title {
+  margin-top: 5%;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.project-img {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.project-img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.project-img img {
+  max-width: 100%;
+}
+
+.project-img .preview {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  border: 3px solid white;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 1;
 }
