@@ -128,3 +128,88 @@ html {
     bottom: calc(5% - 10vh);
   }
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  background-color: #343f4f;
+}
+
+.section-header{
+  padding: 10px 0;
+  color: #fc6d6d;
+  background-color: #24292e;
+  font-size: 2.2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about-descript {
+  color: white;
+  font-size: 2rem;
+  text-align: justify;
+  padding: 5%;
+}
+
+.programming-lang {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.lang-logo {
+  position: relative;
+  width: 30vh;
+  flex-basis: 30vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.lang-logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.lang-descript {
+  position: relative;
+  width: 90%;
+  padding: 10px;
+  font-size: 1.7rem;
+  background-color: #343f4f;
+  color: #fff;
+  border-radius: 5%;
+  box-shadow: 5px 5px 5px #000;
+  margin-top: -7%;
+}
+
+.lang-descript .mg-top {
+  display: block;
+  margin-top: 5%;
+}
+
+.programming-lang-progressing,
+.programming-lang-next,
+.projects {
+  margin-top: 10%;
+}
+
+.programming-lang-progressing .programming-lang,
+.programming-lang-next .programming-lang {
+  margin-top: 5%;
+}
+
+.programming-lang-progressing .lang-logo,
+.programming-lang-next .programming-lang:nth-child(2) .lang-logo {
+  border-radius: 50%;
+}
+
+.programming-lang-next .programming-lang:nth-child(3) .lang-logo {
+  margin-bottom: -20%;
+}
