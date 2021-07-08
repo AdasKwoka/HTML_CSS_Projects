@@ -13,7 +13,31 @@
 </head>
 
 <body>
-  <header class="main-header">
+  <div class="menu-btn">
+    <div class="burger"></div>
+  </div>
+  <nav class="mobile">
+    <ul>
+      <li><a href="#" class="home">
+          Home
+        </a></li>
+      <li><a href="#" class="about">
+          About
+        </a></li>
+      <li><a href="#" class="programing-langs">
+          Programming langs
+        </a></li>
+      <li><a href="#" class="projects-nav">
+          Projects
+        </a></li>
+      <li><a href="#" class="hardware-nav">
+          Hardware
+        </a></li>
+    </ul>
+  </nav>
+
+
+  <header id="home" class="main-header">
     <div class="dynamic-txt">
       <h1>Hello</h1>
       <h1>I am Adam Kwoka</h1>
@@ -26,35 +50,36 @@
     <div class="go-down">
       <i class="fas fa-chevron-down"></i>
     </div>
+    <div class="email">
+      <p>adam.kwoka99@gmail.com</p>
+    </div>
   </header>
   <main>
-    <section class="about">
+    <section id="about" class="about">
       <h1 class="section-header">
         About me
       </h1>
       <p class="about-descript">
-        Undergraduate Computer Science student on Cracow University of Technology. At this point, I'm learning how to
-        create responsive web applications. In the future I also plan to learn how to use and create databases. Outside
+        Undergraduate Computer Science student on Cracow University of Technology. At this point, I'm learning how
+        to
+        create responsive web applications. In the future I also plan to learn how to use and create databases.
+        Outside
         of programming, my passions include weightlifting, reading, hiking, and rollerblading.
       </p>
     </section>
-    <section class="programming-langs-use">
+    <section id="programing-langs" class="programming-langs-use">
       <h1 class="section-header">
         What i use
       </h1>
       <article class="programming-lang">
         <div class="lang-logo"><img src="images/html5_logo.png" alt="logo html5"></div>
-        <p class="lang-descript"><span class="mg-top">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus reprehenderit
-            provident hic eum placeat in? Maiores assumenda omnis aliquid. Officiis vero unde dolore eligendi laudantium
-            ipsam nostrum. Sequi, aspernatur cumque.</span></p>
+        <p class="lang-descript"><span class="mg-top">I use HTML5 tags according to their semantics.</span></p>
       </article>
       <article class="programming-lang">
         <div class="lang-logo"><img src="images/css3_logo.png" alt="logo css3"></div>
-        <p class="lang-descript"><span class="mg-top">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus reprehenderit
-            provident hic eum placeat in? Maiores assumenda omnis aliquid. Officiis vero unde dolore eligendi laudantium
-            ipsam nostrum. Sequi, aspernatur cumque.</span></p>
+        <p class="lang-descript"><span class="mg-top">I use CSS to an intermediate degree. I am no stranger to
+            concepts
+            such as Flexbox, CSS Grid, responsiveness, etc.</span></p>
       </article>
     </section>
     <section class="programming-lang-progressing">
@@ -63,10 +88,8 @@
       </h1>
       <article class="programming-lang">
         <div class="lang-logo"><img src="images/js_logo.png" alt="logo html5"></div>
-        <p class="lang-descript"><span class="mg-top">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus reprehenderit
-            provident hic eum placeat in? Maiores assumenda omnis aliquid. Officiis vero unde dolore eligendi laudantium
-            ipsam nostrum. Sequi, aspernatur cumque.</span></p>
+        <p class="lang-descript"><span class="mg-top">It's hard to find a front-end developer who doesn't know this
+            programming language. That is why it will be in my future set.</span></p>
       </article>
     </section>
     <section class="programming-lang-next">
@@ -75,20 +98,18 @@
       </h1>
       <article class="programming-lang">
         <div class="lang-logo"><img src="images/react_logo.png" alt="logo html5"></div>
-        <p class="lang-descript"><span class="mg-top">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus reprehenderit
-            provident hic eum placeat in? Maiores assumenda omnis aliquid. Officiis vero unde dolore eligendi laudantium
-            ipsam nostrum. Sequi, aspernatur cumque.</span></p>
+        <p class="lang-descript"><span class="mg-top">I consider React the future of user interface development so
+            our
+            closer meeting is inevitable.</span></p>
       </article>
       <article class="programming-lang">
         <div class="lang-logo"><img src="images/nodejs_logo.png" alt="logo html5"></div>
-        <p class="lang-descript"><span class="mg-top">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus reprehenderit
-            provident hic eum placeat in? Maiores assumenda omnis aliquid. Officiis vero unde dolore eligendi laudantium
-            ipsam nostrum. Sequi, aspernatur cumque.</span></p>
+        <p class="lang-descript"><span class="mg-top">Effective front-end programming also requires knowledge of
+            what
+            happens inside web applications. Hence the decision for a future closer look.</span></p>
       </article>
     </section>
-    <section class="projects">
+    <section id="projects-nav" class="projects">
       <h1 class="section-header">
         My projects
       </h1>
@@ -103,7 +124,24 @@
         </div>
       </div>
     </section>
+    <section id="hardware-nav" class="hardware">
+      <h1 class="section-header">My equipment</h1>
+      <div class="hardware-wrap">
+        <p class="hardware-name">Asus ROG Strix GL702VM</p>
+        <ul class="hardware-description">
+          <li>Procesor: Intel Core i7-6700HQ</li>
+          <li>Pamięć RAM: 16GB</li>
+          <li>Karta gtraficzna: NVIDIA GeForce GTX 1060</li>
+          <li>System operacyjny: Windows 10 Home</li>
+        </ul>
+      </div>
+    </section>
   </main>
+  <footer>
+    Adam Kwoka &copy; 2021
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
