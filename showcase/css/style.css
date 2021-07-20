@@ -1089,10 +1089,8 @@ footer {
 
 @media (min-width: 1600px) and (orientation: landscape),
         (min-width: 1600px) and (orientation: portrait){
-  html {
     .go-down {
       width: 4vw;
       height: 4vw;   
     }
-  }
 }
