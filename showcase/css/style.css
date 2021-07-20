@@ -397,7 +397,7 @@ main {
 .hardware-wrap {
   position: relative;
   min-height: 50vh;
-  background-image: url("/images/hardware_400x640.png");
+  background-image: url("../images/hardware_400x640.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -951,7 +951,7 @@ footer {
   .hardware-wrap {
     position: relative;
     min-height: 50vh;
-    background-image: url("/images/hardware_big.png");
+    background-image: url("../images/hardware_big.png");
     background-size: 50% 100%;
     background-position: left center;
     background-repeat: no-repeat;
